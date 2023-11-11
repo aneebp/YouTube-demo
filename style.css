@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;    
+    
+
+}
+
+.mute-text {
+    color: gray;
+}
+
+sup {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.profile-pic {
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+}
+
+.categories {
+    padding: 1rem 2rem;
+    margin-left: 0.3rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0rem;
+    cursor: pointer;
+    transition: all 0.4s all;
+}
+
+.categories:hover {
+    background: rgb(210, 204, 204);
+}
+
+.line {
+    background: gray;
+    height: 1px;
+    width: 14rem;
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* ==========Header======================= */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+header nav .logo {
+    display: flex;
+    gap: 1.6rem;
+    padding-left: 2.3rem;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 6rem;
+}
+
+nav .search-bar {
+    align-items: center;
+    display: flex;
+}
+
+.search-bar input {
+    height: 2.5rem;
+    width: 34rem;
+    border-radius: 10rem;
+    border: 1px solid gray;
+}
+
+.search-bar input::placeholder {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.search-bar input[type="text"] {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+nav .search-bar .material-symbols-outlined:last-child {
+    font-variation-settings: "FILL"1, "wght"400, "GRAD"0, "opsz"48;
+}
+
+.search-bar .search-box {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.search-box span {
+    position: absolute;
+    right: 15;
+}
+
+nav .icons {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+/* =====================================Main Section================================================ */
+
+main {
+    position: relative;
+    top: 1rem;
+}
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+/* ========================================Left Side============================ */
+
+.container .left-side {
+    position: sticky;
+}
+
+.left-side .subscription p {
+    padding-left: 2.4rem;
+    margin-bottom: 0rem;
+}
+
+.left-side .explore p {
+    padding-left: 2.4rem;
+    margin-bottom: 0rem;
+}
+
+.subscription .categories {
+    position: relative;
+}
+
+.subscription .categories p {
+    position: absolute;
+    top: 18;
+    left: 36;
+}
+
+.subscription .categories .profile-pic {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.explore .categories {
+    display: flex;
+    gap: 0rem;
+    position: relative;
+}
+
+.explore .categories p {
+    position: absolute;
+    top: 18;
+    left: 36;
+}
+
+.home-section .categories:first-child {
+    background: rgb(181 172 175 / 17%);
+}
+
+.home-section .categories:first-child .material-symbols-outlined {
+    font-variation-settings: "FILL"1, "wght"400, "GRAD"0, "opsz"48;
+}
+
+/* ================Right-side========================= */
+.right-side .seggections {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.seggections .suggection {
+    padding: 0.5rem 2rem;
+    background: rgb(181 172 175 / 17%);
+    align-items: center;
+    justify-content: center;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.seggections .suggection:first-child {
+    background: black;
+    color: white;
+}
+
+/* ================Feed================== */
+
+.right-side .first-line {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+.first-line .thumbnail {
+    height: 252px;
+    width: 390px;
+    position: relative;
+}
+
+.first-line .thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.first-line .profile-view {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.first-line .profile-view p {
+    max-width: 280px;
+    font-weight: 500;
+}
+
+.first-line .channel-details {
+    display: grid;
+    margin-left: 2.7rem;
+    margin-top: 0.2rem;
+    position: relative;
+}
+
+.first-line .channel-details p:last-child {
+    position: absolute;
+    top: 10;
+}
+
+.thumbnail .time {
+    position: absolute;
+    top: 223px;
+    left: 338px;
+    height: 440px;
+    width: 40px;
+    display: block;
+    align-items: center;
+}
+
+.thumbnail .time p {
+    color: white;
+    background: black;
+    font-size: 14px;
+    border-radius: 5px;
+}
